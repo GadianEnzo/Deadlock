@@ -15,7 +15,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container my-4">
-        <a class="navbar-brand" href="#"><img src="img/icon.png" width="64" height="64"/> Deadlock</a>
+        <a class="navbar-brand" href="#"><img src="../img/icon.png" width="64" height="64"/> Deadlock</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
         </button>
@@ -53,32 +53,46 @@
     <!-- Caja de contenido basica -->
     
 <main>
-<div class="container my-4">
-    <div class="row my-4">
-        <div class="col bg-light text-center py-2 rounded-3">
-            <h3>Formulario de contacto</h3>
+    <div class="container my-4">
+        <div class="row my-4">
+            <div class="col bg-light text-center py-2 rounded-3">
+                <h3>Formulario de contacto</h3>
+            </div>
+        </div>
+
+        <div class="container-fluid my-4 rounded-3">
+            <div class="col-lg-9 col-md-12 col-sm-12 mx-auto">
+
+            <form
+                action="https://formspree.io/f/xzzklypw"
+                method="POST"
+            >
+
+                <div class="mb-3">
+                    <label for="NombreContacto" class="form-label">Nombre</label>
+                    <input type="text" class="form-control shadow bg-light" id="NombreContacto" placeholder="Introduce tu nombre aquí">
+                </div>
+                <div class="mb-3">
+                    <label for="EmailContacto" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control shadow bg-light" id="EmailContacto" placeholder="Introduce tu correo electrónico aquí">
+                </div>
+                <div class="mb-3">
+                    <label for="MensajeContacto" class="form-label">Mensaje</label>
+                    <textarea class="form-control shadow bg-light" name="MensajeContacto" rows="5"></textarea>
+                </div>
+                <!--
+                <div class="mb-3">
+                    <label for="MensajeContacto" class="form-label">Mensaje</label>
+                    <textarea class="form-control shadow bg-light" id="MensajeContacto" rows="5"></textarea>
+                </div> -->
+                <div class="row-lg-6 row-md-6 row-sm-12 g-3">
+                    <button type="submit" class="btn btn-primary shadow was-validated">Enviar</button>
+                    <button type="reset" class="btn btn-secondary shadow float-end">Borrar</button>
+                </div>
+            </form> 
+
         </div>
     </div>
-
-<div class="container-fluid my-4">
-    <div class="col-lg-8 col-md-6 col-sm-4">
-    <form>
-        <div class="mb-3">
-            <label for="NombreContacto" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="NombreContacto" placeholder="Introduce tu nombre aquí">
-        </div>
-        <div class="mb-3">
-            <label for="EmailContacto" class="form-label">Correo Electrónico</label>
-            <input type="email" class="form-control" id="EmailContacto" placeholder="Introduce tu correo electrónico aquí">
-        </div>
-        <div class="mb-3">
-            <label for="MensajeContacto" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="MensajeContacto" rows="5"></textarea>
-        </div>
-   </form>
-</div>
-</div>
-
 </main>
 
     <!-- Footer -->
